@@ -1,0 +1,68 @@
+name: prototico_twoo # Certifique-se de que este nome corresponde ao seu projeto
+description: Um protótipo para uso em projetos Flutter com Firebase.
+publish_to: 'none' # Não publique este pacote no pub.dev
+
+version: 1.0.0+1
+
+environment:
+  sdk: '>=3.4.3 <4.0.0'
+
+dependencies:
+  flutter:
+    sdk: flutter
+  flutter_localizations: # Necessário para internacionalização
+    sdk: flutter
+
+  # Pacotes para UI e Estilo
+  cupertino_icons: ^1.0.2 # Ícones estilo iOS
+  logger: ^2.0.0 # Para logging
+  provider: ^6.1.2 # Para gestão de estado
+  shared_preferences: ^2.2.3 # Para armazenamento de preferências locais
+  google_sign_in: ^6.2.1 # Para login com Google
+
+  # Pacotes Firebase
+  firebase_analytics: ^11.0.0
+  firebase_auth: ^5.0.0
+  firebase_core: ^3.14.0
+  firebase_core_web: ^2.16.0 # Necessário para web
+  cloud_firestore: ^5.0.0
+  firebase_storage: ^12.0.0
+
+  # Pacotes para Localização e Detecção de País/Moeda
+  intl: ^0.20.2 # Para internacionalização e formatação de datas/números
+  geocoding: ^3.0.0 # Versão que suporta o geolocator ^11.0.0
+  geolocator: ^11.0.0 # ESTA É A VERSÃO QUE USA 'locationSettings'
+  firebase_ai: ^2.1.0
+  firebase_dynamic_links: ^6.1.7
+
+dev_dependencies:
+  flutter_test:
+    sdk: flutter
+  build_runner: ^2.4.9 # Ferramenta para gerar código
+  flutter_lints: ^3.0.0 # Regras de linting para código Flutter
+
+# A secção 'flutter' é onde você declara assets e fontes
+flutter:
+  generate: true
+
+#  assets:
+#   - assets/images/logo.png
+#    - assets/images/texture.png
+#    - assets/images/google_logo.png
+
+#  fonts:
+#    - family: Inter
+#      fonts:
+#        - asset: assets/fonts/Inter-Regular.ttf
+#        - asset: assets/fonts/Inter-Bold.ttf
+#          weight: 700
+#    - family: Roboto
+#      fonts:
+#        - asset: assets/fonts/Roboto-Regular.ttf
+#        - asset: assets/fonts/Roboto-Bold.ttf
+#          weight: 700
+#    - family: Lato
+#      fonts:
+#        - asset: assets/fonts/Lato-Regular.ttf
+#        - asset: assets/fonts/Lato-Bold.ttf
+#          weight: 700

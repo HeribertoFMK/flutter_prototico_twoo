@@ -1,0 +1,29 @@
+{
+  "project_info": {
+    "project_number": "40943690754",
+    "project_id": "prototico-twoo",
+    "storage_bucket": "prototico-twoo.firebasestorage.app"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:40943690754:android:5e1ede32078c0ebe91731b",
+        "android_client_info": {
+          "package_name": "com.example.prototico_twoo"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyAww_Pal5OonnZ1XY6tH6K24ay_OLp0im8"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
