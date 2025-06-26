@@ -6,17 +6,26 @@ class TermsOfUseScreen extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    return const CustomScaffold(
+    return CustomScaffold(
       userName: 'Heriberto',
-      profileImageUrl: null,
-      body: Padding(
-        padding: EdgeInsets.all(24),
-        child: SingleChildScrollView(
-          child: Text(
-            'Estes são os Termos de Uso do aplicativo. '
-            'Ao utilizar o app, o usuário concorda com todas as regras aqui descritas.',
-            style: TextStyle(fontSize: 16),
-          ),
+      profileImageUrl: '',
+      currentIndex: 0,
+      onTabSelected: (index) => Navigator.of(context).pushNamed(
+        index == 0
+            ? '/home'
+            : index == 1
+                ? '/settings'
+                : '/about',
+      ),
+      body: const Padding(
+        padding: EdgeInsets.all(16.0),
+        child: Text(
+          'Ao utilizar este aplicativo, você concorda com os seguintes termos:\n\n'
+          '1. Não usar o app para fins ilegais.\n'
+          '2. Não modificar ou tentar quebrar a segurança do sistema.\n'
+          '3. O uso dos serviços é por sua conta e risco.\n\n'
+          'Agradecemos por confiar em nossa plataforma.',
+          style: TextStyle(fontSize: 16),
         ),
       ),
     );

@@ -12,9 +12,9 @@ import 'package:prototico_twoo/screens/settings/contact_screen.dart';
 import 'package:prototico_twoo/screens/settings/privacy_policy_screen.dart';
 import 'package:prototico_twoo/screens/settings/settings_screen.dart';
 import 'package:prototico_twoo/screens/settings/terms_of_use_screen.dart';
+import 'package:prototico_twoo/widgets/main_navigation_screen.dart';
 
 // Main Navigation Screen (com appbar e bottom nav)
-import 'package:prototico_twoo/widgets/main_navigation_screen.dart';
 
 class AppRouter {
   static const String login = '/login';

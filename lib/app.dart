@@ -7,13 +7,16 @@ class MyApp extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return MaterialApp(
-      title: 'Protótipo Twoo',
       debugShowCheckedModeBanner: false,
-      theme: ThemeData.light(),
+      title: 'Prototico Twoo',
+      theme: ThemeData(
+        useMaterial3: false, // ou true se quiser usar o novo material
+        brightness: Brightness.light,
+      ),
       darkTheme: ThemeData.dark(),
       themeMode: ThemeMode.system,
-      initialRoute: AppRouter.mainNav,
       onGenerateRoute: AppRouter.generateRoute,
+      initialRoute: AppRouter.home, // ou AppRouter.login
     );
   }
 }

@@ -43,11 +43,12 @@ dev_dependencies:
 
 # A secção 'flutter' é onde você declara assets e fontes
 flutter:
+  uses-material-design: true
   generate: true
 
- # assets:
- #   - assets/images/login_art.png
-
+  assets:
+    - assets/images/fundo_divertido.png
+    - assets/images/login_art.png
 #  fonts:
 #    - family: Inter
 #      fonts:
